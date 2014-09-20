@@ -44,7 +44,6 @@ table { border-spacing: 0; }
 }
 
 /* ---- Alignments ---- */
-
 .hide{ display: none;}
 .show{display: block;}
 
@@ -57,7 +56,6 @@ table { border-spacing: 0; }
 .text-center {text-align: center;}
 .text-justify {text-align: justify;}
 .text-transform-none{	text-transform: none; }
-
 
 .space-all {margin: 20px;}
 .space-top {margin-top: 20px;}
@@ -90,7 +88,6 @@ table { border-spacing: 0; }
 .padding-right {padding-right: 20px;}
 .padding-h {padding: 20px 0;}
 .padding-v {padding: 0 20px;}
-
 
 .padding-small-all {padding-top: 10px;}
 .padding-small-top {padding-top: 10px;}
@@ -235,57 +232,17 @@ table { border-spacing: 0; }
 .vform span.pre, .hform span.pre{width: 10%; max-width: 25px;	}
 .vform input.post, .hform input.post{padding-left: 5px!important 	}
 
-input[disabled],
-select[disabled],
-textarea[disabled],
-input[readonly],
-select[readonly],
-textarea[readonly] ,
-button[disabled],
-button[disabled] {
-  cursor: not-allowed;
-  background-color: #eeeeee!important;
-  color: #000000;
-   /*font-weight: bold;*/
-   font-size: 10px;
-}
-input[type="radio"][disabled],
-input[type="checkbox"][disabled],
-input[type="radio"][readonly],
-input[type="checkbox"][readonly] {
-  background-color: transparent;
-}
-button:focus:invalid,
-input:focus:invalid,
-textarea:focus:invalid,
-select:focus:invalid {
-  color: #b94a48;
-  border-color: #ee5f5b;
-}
-button:focus:invalid:focus,
-input:focus:invalid:focus,
-textarea:focus:invalid:focus,
-select:focus:invalid:focus {
-  border-color: #e9322d;
-  -webkit-box-shadow: 0 0 6px #f8b9b7;
-  -moz-box-shadow: 0 0 6px #f8b9b7;
-  box-shadow: 0 0 6px #f8b9b7;
-}
-
-
 .vform .c12 fieldset
 {
 	font-family: tahoma;
 	font-size: 10px;
 }
-
-.vform fieldset.c12 label
+.vform fieldset.c12 label,
+.hform fieldset.c12 label
 {
-	font-size: 10px;
-	font-family:tahoma;
-	margin: 0;
 	text-transform: uppercase;
-	font-weight: bold;
+	font-size: 11px;
+	font-weight: 700;
 }
 /* input default */
 .vform .c12 fieldset  input[type="text"],
@@ -301,8 +258,6 @@ select:focus:invalid:focus {
 {
 	font-size: 12px;
 	margin-bottom: 1px;
-	/*height: 25px;*/
-	/*width: 100%;*/
 }
 
 /*input Small*/
@@ -359,6 +314,88 @@ select:focus:invalid:focus {
 .vform textarea, .vform input[type="text"], .vform select,.vform input[type="search"],
 .hform textarea, .hform input[type="text"], .hform select, .hform input[type="search"] {
 	text-transform: uppercase;
+}
+
+label.radio,
+label.checkbox,
+.radio + .radio,
+.checkbox + .checkbox {
+ 	cursor: pointer;
+ 	font-weight: 400!important;
+	margin-bottom: 0;
+	padding-left: 15px;
+	vertical-align: middle;
+
+}
+
+.radio input[type="radio"],
+.radio-inline input[type="radio"],
+.checkbox input[type="checkbox"],
+.checkbox-inline input[type="checkbox"] {
+	margin-top: 0;
+	margin-left: -15px;
+	position: absolute;
+
+}
+.vform label.radio,
+.vform label.checkbox{
+	width: 100%;
+}
+.hform label.radio,
+.hform label.checkbox{
+	width: auto;
+	display: inline-block;
+	margin-left: 15px ;
+}
+
+input[disabled],
+select[disabled],
+textarea[disabled],
+input[readonly],
+select[readonly],
+textarea[readonly] ,
+button[disabled],
+button[disabled] {
+  cursor: not-allowed;
+  background-color: #eeeeee!important;
+  color: #000000;
+   font-size: 10px;
+}
+input[type="radio"][disabled],
+input[type="checkbox"][disabled],
+input[type="radio"][readonly],
+input[type="checkbox"][readonly] {
+  background-color: transparent;
+}
+button:focus:invalid,
+input:focus:invalid,
+textarea:focus:invalid,
+select:focus:invalid {
+  color: #b94a48;
+  border-color: #ee5f5b;
+}
+button:focus:invalid:focus,
+input:focus:invalid:focus,
+textarea:focus:invalid:focus,
+select:focus:invalid:focus {
+  border-color: #e9322d;
+  -webkit-box-shadow: 0 0 6px #f8b9b7;
+  -moz-box-shadow: 0 0 6px #f8b9b7;
+  box-shadow: 0 0 6px #f8b9b7;
+}
+input[type="radio"][disabled],
+input[type="checkbox"][disabled],
+.radio[disabled],
+.radio-inline[disabled],
+.checkbox[disabled],
+.checkbox-inline[disabled],
+fieldset[disabled] input[type="radio"],
+fieldset[disabled] input[type="checkbox"],
+fieldset[disabled] .radio,
+fieldset[disabled] .radio-inline,
+fieldset[disabled] .checkbox,
+fieldset[disabled] .checkbox-inline {
+  cursor: not-allowed;
 }
 
 /* ---- Buttons ---- */
@@ -532,7 +569,6 @@ select:focus:invalid:focus {
 }
 
 /* ---- Table ---- */
-
 .table {
 	width: 100%;
 	font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
@@ -623,6 +659,20 @@ select:focus:invalid:focus {
    border: none;
     border-spacing:0;
     border-collapse:collapse;
+}
+
+.table tr td a{
+	text-decoration: none;
+}
+.table tr td [class^="icon-"],
+.table tr td [class*=" icon-"] {
+	font-size: 16px;
+	color:  #161111 ;
+}
+.table tr td [class^="icon-"]:hover,
+.table tr td [class*=" icon-"]:hover{
+	font-size: 17px;
+	color:  #3C3737 ;
 }
 
 .cursor-pointer{ cursor: pointer;}
@@ -716,8 +766,6 @@ select:focus:invalid:focus {
 	background: #E3E0E0!important ;
 }
 
-
-
 /* imagen */
 .img-rounded {
   -webkit-border-radius: 6px;
@@ -738,34 +786,6 @@ select:focus:invalid:focus {
   -webkit-border-radius: 500px;
      -moz-border-radius: 500px;
           border-radius: 500px;
-}
-
-.radio + .radio,
-.checkbox + .checkbox {
-  margin-top: -5px;
-  vertical-align: middle;
-}
-
-.radio input[type="radio"],
-.radio-inline input[type="radio"],
-.checkbox input[type="checkbox"],
-.checkbox-inline input[type="checkbox"] {
-  margin-left: 1px;
-}
-
-input[type="radio"][disabled],
-input[type="checkbox"][disabled],
-.radio[disabled],
-.radio-inline[disabled],
-.checkbox[disabled],
-.checkbox-inline[disabled],
-fieldset[disabled] input[type="radio"],
-fieldset[disabled] input[type="checkbox"],
-fieldset[disabled] .radio,
-fieldset[disabled] .radio-inline,
-fieldset[disabled] .checkbox,
-fieldset[disabled] .checkbox-inline {
-  cursor: not-allowed;
 }
 
 .ContenedorTable{
@@ -847,7 +867,6 @@ fieldset[disabled] .checkbox-inline {
 
   ul.nav-btn li a:hover
   {
-    /*color: #1B84C6;*/
     color: #0A0909;
     border: 1px solid #C5C5C5;
     opacity: .55;
@@ -861,7 +880,6 @@ fieldset[disabled] .checkbox-inline {
     display: inline-block;
     text-align: center;
     padding-top: 2px ;
-
   }
   .nav-btn .pre ,
   .nav-btn .post,
@@ -895,18 +913,18 @@ fieldset[disabled] .checkbox-inline {
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e1e1e1', endColorstr='#9f9f9f',GradientType=0 ); /* IE6-9 */
   }
 
-  .boton
-  {
-    text-align: center;
-    max-width: 105px ;
-   	height: 30px!important ;
-   	border: 1px solid #ccc;
-  }
+.boton
+{
+	text-align: center;
+	max-width: 105px ;
+	height: 30px!important ;
+	border: 1px solid #ccc;
+}
 
 .boton .pre,
 .boton .post {
-	 	height: 29px!important ;
-	 	color: #fff!important;
+ 	height: 29px!important ;
+ 	color: #fff!important;
 }
 
 .nav-btn [class^="icon-"]:hover,
@@ -931,10 +949,7 @@ fieldset[disabled] .checkbox-inline {
 {
 	color: #AA0505 ;
 }
-
-
-
-
+/*icons fonts*/
 @font-face {
 	font-family: 'icomoon';
 	src:url('../fonts/icons/icomoon.eot?46hupa');
@@ -956,8 +971,6 @@ fieldset[disabled] .checkbox-inline {
 	text-transform: none;
 	line-height: 1;
 	color:  #161111 ;
-
-	/* Better Font Rendering =========== */
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
@@ -1071,23 +1084,6 @@ fieldset[disabled] .checkbox-inline {
 	content: "\e620";
 }
 
-
-
-.table tr td a{
-	text-decoration: none;
-}
-.table tr td [class^="icon-"],
-.table tr td [class*=" icon-"] {
-	font-size: 16px;
-	color:  #161111 ;
-}
-.table tr td [class^="icon-"]:hover,
-.table tr td [class*=" icon-"]:hover{
-	font-size: 17px;
-	color:  #3C3737 ;
-}
-
-
 /* Media query for 960 Screens - sets nested grids to 100% */
 @media only screen and (max-width:960px){
 	.row .row .c1,.row .row .c2,.row .row .c3,.row .row .c4,.row .row .c5,.row .row .c6,.row .row .c7,.row .row .c8,.row .row .c9,.row .row .c10,.row .row .c11,.row .row .c12,.row .row .c1-5,.row .row .c1-8{width:100%;margin-bottom:5px;margin-left:0px;margin-right:0px; }
@@ -1153,7 +1149,6 @@ fieldset[disabled] .checkbox-inline {
 {
 	background-color: #EBEBEB ;
 }
-
 
 /*Datepicker*/
 #ui-datepicker-div {

@@ -6,7 +6,6 @@
       <link rel="stylesheet" href="./css/style2014.css">
    </head>
    <body>
-
       <div class="c6">
          <form id="frmEmergente" name="frmEmergente">
             <div id="emergente" class="row">
@@ -14,7 +13,6 @@
                <hr id="hrTitle" style="margin:5px;">
                <div id="spanContenido">
                   <div class="vform vformContenedor">
-
                      <fieldset class="c12">
                         <fieldset class="c4">
                            <label for="nComprobante_">Comprobante</label>
@@ -39,11 +37,9 @@
                            <label for="FechaRegistro_">Fecha de Acopio</label>
                            <input class="" type="text" id="FechaRegistro_" name="FechaRegistro_" placeholder="INGRESE Fecha Acopio " value="17/09/2014" style="padding-left:5px" readonly="">
                         </fieldset>
-
                         <fieldset class="c7">
                            <label for="Persona_">Productor</label>
                            <input  type="text" id="Persona_" name="Persona_" placeholder="Ingrese Apellidos Nombres / DNI" value="" onkeyup=" if(event.keyCode == 13 ){xajax_Buscar_Productor(this.value, '-') ;} ;if( (jq(this).val()).length  == 0){ xajax_Buscar_Productor(this.value, '-') ; }">
-
                         </fieldset>
                         <fieldset class="c5">
                            <label for="nSector_">Sector</label>
@@ -66,12 +62,10 @@
                         </fieldset>
                         <fieldset class="c6">
                            <label for="nSacos_">Sacos</label>
-
                            <input type="text" id="nSacos_" name="nSacos_" placeholder="Ingrese Numero de Sacos" onkeyup="js_Calcular_Acopio();">
                         </fieldset>
                         <fieldset class="c6">
                            <label for="LibrasBruta_">Libras Brutas</label>
-
                            <input  type="text" id="LibrasBruta_" name="LibrasBruta_" placeholder="ingrese Libras brutas" onkeyup="js_Calcular_Acopio();">
                         </fieldset>
                         <fieldset class="c6">
@@ -114,6 +108,37 @@
                            <label for="Obsevacion_"> Observación</label>
                            <input  type="text" id="Obsevacion_" name="Obsevacion_" placeholder="Obsevacion ">
                         </fieldset>
+
+                     <fieldset class="c6  ">
+                        <label for="" >checkbox: </label>
+                        <label class="checkbox">
+                        <input type="checkbox" id="inlineCheckbox1" value="option1">bueno
+                        </label>
+                        <label class="checkbox">
+                        <input type="checkbox" id="inlineCheckbox2" value="option2">regular
+                        </label>
+                        <label class="checkbox">
+                        <input type="checkbox" id="inlineCheckbox3" value="option3">basico
+                        </label>
+                        <label class="checkbox">
+                        <input type="checkbox" id="inlineCheckbox3" value="option3">malo
+                        </label>
+                     </fieldset>
+                     <fieldset class="c6  ">
+                        <label for="">Sexo: </label>
+                        <label class="radio">
+                        <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">option1
+                        </label>
+                        <label class="radio">
+                        <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">option2
+                        </label>
+                        <label class="radio">
+                        <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">option3
+                        </label>
+                        <label class="radio">
+                        <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option4">option4
+                        </label>
+                     </fieldset>
                      </fieldset>
                      <div class="clear"></div>
                      <div id="labelMsj" class="c12 MsjAlert "></div>
@@ -133,135 +158,157 @@
             </div>
          </form>
       </div>
-
-       <div class="c6">
+      <div class="c6">
          <form id="frmEmergente" name="frmEmergente">
-            <div id="emergente" class="row">
+
                <span id="title_emergente" class="title-emergente">NUEVO Comprobante de Entrada  </span>
                <hr id="hrTitle" style="margin:5px;">
-
-                  <div class="hform label-right ">
-
-                     <fieldset class="c12">
-                        <fieldset class="c4">
-                           <label for="nComprobante_">Comprobante</label>
-                           <select name="nComprobante_" id="nComprobante_" disabled="">
-                              <option value="3">BOLETA</option>
-                              <option value="2" selected="" class="sel">COMPROBANTE DE ENTRADA</option>
-                              <option value="1">FACTURA</option>
-                           </select>
-                        </fieldset>
-                        <fieldset class="c2">
-                           <label for="nSerie_">Serie</label>
-                           <select name="nSerie_" id="nSerie_" onchange="xajax_Cargar_Numeracion_Serie(this.value, 2)">
-                              <option value="1" selected="" class="sel">001</option>
-                              <option value="2">002</option>
-                           </select>
-                        </fieldset>
-                        <fieldset class="c3">
-                           <label for="NumeroSerie_"> Número de Serie </label>
-                           <input class="" type="text" id="NumeroSerie_" name="NumeroSerie_" placeholder="INGRESE NUMERO SERIE " value="00000102" style="padding-left:5px" readonly="">
-                        </fieldset>
-                        <fieldset class="c3">
-                           <label for="FechaRegistro_">Fecha de Acopio</label>
-                           <input class="" type="text" id="FechaRegistro_" name="FechaRegistro_" placeholder="INGRESE Fecha Acopio " value="17/09/2014" style="padding-left:5px" readonly="">
-                        </fieldset>
-
-                        <fieldset class="c7">
-                           <label for="Persona_">Productor</label>
-                           <input  type="text" id="Persona_" name="Persona_" placeholder="Ingrese Apellidos Nombres / DNI" value="" onkeyup=" if(event.keyCode == 13 ){xajax_Buscar_Productor(this.value, '-') ;} ;if( (jq(this).val()).length  == 0){ xajax_Buscar_Productor(this.value, '-') ; }">
-
-                        </fieldset>
-                        <fieldset class="c5">
-                           <label for="nSector_">Sector</label>
-                           <select name="nSector_" id="nSector_">
-                              <option value="">1</option>
-                              <option value="">2</option>
-                              <option value="">3</option>
-                              <option value="">4</option>
-                              <option value="">5</option>
-                           </select>
-                        </fieldset>
-                        <hr>
-                        <fieldset class="c6">
-                           <label for="nProducto_">Productos</label>
-                           <select name="nProducto_" id="nProducto_">
-                              <option value="3">CAFÉ ORGÁNICO</option>
-                              <option value="2">CAFÉ PERGAMINO FAIRTRADE</option>
-                              <option value="1">CAFÉ PERGAMINO ORGÁNICO FAIRTRADE</option>
-                           </select>
-                        </fieldset>
-                        <fieldset class="c6">
-                           <label for="nSacos_">Sacos</label>
-
-                           <input type="text" id="nSacos_" name="nSacos_" placeholder="Ingrese Numero de Sacos" onkeyup="js_Calcular_Acopio();">
-                        </fieldset>
-                        <fieldset class="c6">
-                           <label for="LibrasBruta_">Libras Brutas</label>
-
-                           <input  type="text" id="LibrasBruta_" name="LibrasBruta_" placeholder="ingrese Libras brutas" onkeyup="js_Calcular_Acopio();">
-                        </fieldset>
-                        <fieldset class="c6">
-                           <label for="LibrasTara_"> Libras Tara </label>
-                           <input  type="text" id="LibrasTara_" name="LibrasTara_" placeholder="ingrese Libras Tara " readonly="">
-                        </fieldset>
-                        <fieldset class="c6">
-                           <label for="LibrasNetas_">Libras Netas</label>
-                           <input  type="text" id="LibrasNetas_" name="LibrasNetas_" placeholder="Libras Netas" readonly="">
-                        </fieldset>
-                        <fieldset class="c6">
-                           <label for="QuintalesNetos_">Quintales Netos </label>
-                           <input  type="text" id="QuintalesNetos_" name="QuintalesNetos_" placeholder="Libras Netas" readonly="">
-                        </fieldset>
-                        <fieldset class="c6">
-                           <label for="KgNetos_">Kiligramos Netos </label>
-                           <input  type="text" id="KgNetos_" name="KgNetos_" placeholder="Kiligramos Netos " readonly="">
-                        </fieldset>
-                        <fieldset class="c6">
-                           <label for="Rendimiento_"> Rendimiento </label>
-                           <input  type="text" id="Rendimiento_" name="Rendimiento_" placeholder="Ingrese Rendimiento ">
-                        </fieldset>
-                        <fieldset class="c6">
-                           <label for="Humedad_">Humedad</label>
-                           <input  type="text" id="Humedad_" name="Humedad_" placeholder="Ingrese Humedad">
-                        </fieldset>
-                        <fieldset class="c6">
-                           <label for="PrecioQuintal_">Precio por Quintal </label>
-                           <input  type="text" id="PrecioQuintal_" name="PrecioQuintal_" placeholder="Ingrese Precion Quintal" onkeyup="js_Calcular_Acopio();">
-                        </fieldset>
-                        <fieldset class="c6">
-                           <label for="Total_"> Total</label>
-                           <input  type="text" id="Total_" name="Total_" placeholder="Total" readonly="">
-                        </fieldset>
-                        <fieldset class="c6">
-                           <label for="Premio_"> Premio</label>
-                           <input  type="text" id="Premio_" name="Premio_" placeholder="Premio Certificación ">
-                        </fieldset>
-                        <fieldset class="c6">
-                           <label for="Obsevacion_"> Observación</label>
-                           <input  type="text" id="Obsevacion_" name="Obsevacion_" placeholder="Obsevacion ">
-                        </fieldset>
-                     </fieldset>
-                     <div class="clear"></div>
-                     <div id="labelMsj" class="c12 MsjAlert "></div>
-                     <div id="botonCancelar" class="c2 text-right hide botonCancelar">
-                        <a href="#" onclick="ocultar_emergente();">
-                        <span>Cancelar</span>
-                        </a>
-                     </div>
-                     <div id="botonGuardar" class="c3 text-right">
-                        <a href="#" onclick="xajax_Insertar_Comprob_Entrada(xajax.getFormValues(frmEmergente));" class="boton">
-                        <span class="nav-btn-nombre"> Guardar </span>
-                        <span class=" post icon-save "></span>
-                        </a>
-                     </div>
+               <div class="hform label-right ">
+               <fieldset class="c12">
+                  <fieldset class="c12">
+                     <label for="" class="label-title">checkbox: </label>
+                     <label class="checkbox">
+                     <input type="checkbox" id="inlineCheckbox1" value="option1"> bueno
+                     </label>
+                     <label class="checkbox">
+                     <input type="checkbox" id="inlineCheckbox2" value="option2">regular
+                     </label>
+                     <label class="checkbox">
+                     <input type="checkbox" id="inlineCheckbox3" value="option3"> basico
+                     </label>
+                     <label class="checkbox">
+                     <input type="checkbox" id="inlineCheckbox3" value="option3"> malo
+                     </label>
+                  </fieldset>
+                  <fieldset class="c12  ">
+                     <label for="" class="label-title">Sexo: </label>
+                     <label class="radio">
+                     <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> option1
+                     </label>
+                     <label class="radio">
+                     <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> option2
+                     </label>
+                     <label class="radio">
+                     <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3"> option3
+                     </label>
+                     <label class="radio">
+                     <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option4"> option4
+                     </label>
+                  </fieldset>
+                  <fieldset class="c4">
+                     <label for="nComprobante_">Comprobante</label>
+                     <select name="nComprobante_" id="nComprobante_" disabled="">
+                        <option value="3">BOLETA</option>
+                        <option value="2" selected="" class="sel">COMPROBANTE DE ENTRADA</option>
+                        <option value="1">FACTURA</option>
+                     </select>
+                  </fieldset>
+                  <fieldset class="c2">
+                     <label for="nSerie_">Serie</label>
+                     <select name="nSerie_" id="nSerie_" onchange="xajax_Cargar_Numeracion_Serie(this.value, 2)">
+                        <option value="1" selected="" class="sel">001</option>
+                        <option value="2">002</option>
+                     </select>
+                  </fieldset>
+                  <fieldset class="c3">
+                     <label for="NumeroSerie_"> Número de Serie </label>
+                     <input class="" type="text" id="NumeroSerie_" name="NumeroSerie_" placeholder="INGRESE NUMERO SERIE " value="00000102" style="padding-left:5px" readonly="">
+                  </fieldset>
+                  <fieldset class="c3">
+                     <label for="FechaRegistro_">Fecha de Acopio</label>
+                     <input class="" type="text" id="FechaRegistro_" name="FechaRegistro_" placeholder="INGRESE Fecha Acopio " value="17/09/2014" style="padding-left:5px" readonly="">
+                  </fieldset>
+                  <fieldset class="c7">
+                     <label for="Persona_">Productor</label>
+                     <input  type="text" id="Persona_" name="Persona_" placeholder="Ingrese Apellidos Nombres / DNI" value="" onkeyup=" if(event.keyCode == 13 ){xajax_Buscar_Productor(this.value, '-') ;} ;if( (jq(this).val()).length  == 0){ xajax_Buscar_Productor(this.value, '-') ; }">
+                  </fieldset>
+                  <fieldset class="c5">
+                     <label for="nSector_">Sector</label>
+                     <select name="nSector_" id="nSector_">
+                        <option value="">1</option>
+                        <option value="">2</option>
+                        <option value="">3</option>
+                        <option value="">4</option>
+                        <option value="">5</option>
+                     </select>
+                  </fieldset>
+                  <hr>
+                  <fieldset class="c6">
+                     <label for="nProducto_">Productos</label>
+                     <select name="nProducto_" id="nProducto_">
+                        <option value="3">CAFÉ ORGÁNICO</option>
+                        <option value="2">CAFÉ PERGAMINO FAIRTRADE</option>
+                        <option value="1">CAFÉ PERGAMINO ORGÁNICO FAIRTRADE</option>
+                     </select>
+                  </fieldset>
+                  <fieldset class="c6">
+                     <label for="nSacos_">Sacos</label>
+                     <input type="text" id="nSacos_" name="nSacos_" placeholder="Ingrese Numero de Sacos" onkeyup="js_Calcular_Acopio();">
+                  </fieldset>
+                  <fieldset class="c6">
+                     <label for="LibrasBruta_">Libras Brutas</label>
+                     <input  type="text" id="LibrasBruta_" name="LibrasBruta_" placeholder="ingrese Libras brutas" onkeyup="js_Calcular_Acopio();">
+                  </fieldset>
+                  <fieldset class="c6">
+                     <label for="LibrasTara_"> Libras Tara </label>
+                     <input  type="text" id="LibrasTara_" name="LibrasTara_" placeholder="ingrese Libras Tara " readonly="">
+                  </fieldset>
+                  <fieldset class="c6">
+                     <label for="LibrasNetas_">Libras Netas</label>
+                     <input  type="text" id="LibrasNetas_" name="LibrasNetas_" placeholder="Libras Netas" readonly="">
+                  </fieldset>
+                  <fieldset class="c6">
+                     <label for="QuintalesNetos_">Quintales Netos </label>
+                     <input  type="text" id="QuintalesNetos_" name="QuintalesNetos_" placeholder="Libras Netas" readonly="">
+                  </fieldset>
+                  <fieldset class="c6">
+                     <label for="KgNetos_">Kiligramos Netos </label>
+                     <input  type="text" id="KgNetos_" name="KgNetos_" placeholder="Kiligramos Netos " readonly="">
+                  </fieldset>
+                  <fieldset class="c6">
+                     <label for="Rendimiento_"> Rendimiento </label>
+                     <input  type="text" id="Rendimiento_" name="Rendimiento_" placeholder="Ingrese Rendimiento ">
+                  </fieldset>
+                  <fieldset class="c6">
+                     <label for="Humedad_">Humedad</label>
+                     <input  type="text" id="Humedad_" name="Humedad_" placeholder="Ingrese Humedad">
+                  </fieldset>
+                  <fieldset class="c6">
+                     <label for="PrecioQuintal_">Precio por Quintal </label>
+                     <input  type="text" id="PrecioQuintal_" name="PrecioQuintal_" placeholder="Ingrese Precion Quintal" onkeyup="js_Calcular_Acopio();">
+                  </fieldset>
+                  <fieldset class="c6">
+                     <label for="Total_"> Total</label>
+                     <input  type="text" id="Total_" name="Total_" placeholder="Total" readonly="">
+                  </fieldset>
+                  <fieldset class="c6">
+                     <label for="Premio_"> Premio</label>
+                     <input  type="text" id="Premio_" name="Premio_" placeholder="Premio Certificación ">
+                  </fieldset>
+                  <fieldset class="c6">
+                     <label for="Obsevacion_"> Observación</label>
+                     <input  type="text" id="Obsevacion_" name="Obsevacion_" placeholder="Obsevacion ">
+                  </fieldset>
+                  </fieldset>
+                  <div class="clear"></div>
+                  <div id="labelMsj" class="c12 MsjAlert "></div>
+                  <div id="botonCancelar" class="c2 text-right hide botonCancelar">
+                     <a href="#" onclick="ocultar_emergente();">
+                     <span>Cancelar</span>
+                     </a>
                   </div>
+                  <div id="botonGuardar" class="c3 text-right">
+                     <a href="#" onclick="xajax_Insertar_Comprob_Entrada(xajax.getFormValues(frmEmergente));" class="boton">
+                     <span class="nav-btn-nombre"> Guardar </span>
+                     <span class=" post icon-save "></span>
+                     </a>
+                  </div>
+                  </fieldset>
+               </div>
 
-            </div>
          </form>
       </div>
-<div class="clear"></div>
-
+      <div class="clear"></div>
       <div class="c6">
          <form id="frmEmergente" name="frmEmergente">
             <div id="emergente" class="row">
@@ -297,7 +344,7 @@
                         <fieldset class="c7">
                            <label for="Persona_">Productor</label>
                            <span class="pre icon-search-right"></span>
-                           <input class="pre" type="text" id="Persona_" name="Persona_" placeholder="Ingrese Apellidos Nombres / DNI" value="" onkeyup=" if(event.keyCode == 13 ){xajax_Buscar_Productor(this.value, '-') ;} ;if( (jq(this).val()).length  == 0){	xajax_Buscar_Productor(this.value, '-') ; }">
+                           <input class="pre" type="text" id="Persona_" name="Persona_" placeholder="Ingrese Apellidos Nombres / DNI" value="" onkeyup=" if(event.keyCode == 13 ){xajax_Buscar_Productor(this.value, '-') ;} ;if( (jq(this).val()).length  == 0){ xajax_Buscar_Productor(this.value, '-') ; }">
                            <input type="hidden" id="nPerCodigo_" name="nPerCodigo_">
                            <div class="clear"></div>
                            <div class="divdesplegableBuscar">
@@ -409,9 +456,8 @@
             </div>
          </form>
       </div>
-
-<div class="clear"></div>
-   <div class="c8">
+      <div class="clear"></div>
+      <div class="c8">
          <form id="frmEmergente" name="frmEmergente">
             <div id="emergente" class="row">
                <span id="title_emergente" class="title-emergente">NUEVO Comprobante de Entrada  </span>
@@ -558,8 +604,7 @@
             </div>
          </form>
       </div>
-
-   <div class="c6">
+      <div class="c6">
          <form id="frmEmergente" name="frmEmergente">
             <div id="emergente" class="row">
                <span id="title_emergente" class="title-emergente">NUEVO Comprobante de Entrada  </span>
@@ -706,8 +751,7 @@
             </div>
          </form>
       </div>
-
-  <div class="c12">
+      <div class="c12">
          <form id="frmEmergente" name="frmEmergente">
             <div id="emergente" class="row">
                <span id="title_emergente" class="title-emergente">NUEVO Comprobante de Entrada  </span>
@@ -853,9 +897,8 @@
                </div>
             </div>
          </form>
-  </div>
-
-  <div class="c8">
+      </div>
+      <div class="c8">
          <form id="frmEmergente" name="frmEmergente">
             <div id="emergente" class="row">
                <span id="title_emergente" class="title-emergente">NUEVO Comprobante de Entrada  </span>
@@ -1001,8 +1044,6 @@
                </div>
             </div>
          </form>
-  </div>
-
-
-    </body>
+      </div>
+   </body>
 </html>
