@@ -171,6 +171,8 @@ table { border-spacing: 0; }
 .vform textarea, .hform textarea{min-height: 120px; }
 .vform fieldset, .hform fieldset {margin-bottom: 2px; }
 .vform input[type="file"], .hform input[type="file"] {overflow: none;}
+.hform input[type="file"] {float: right; width: 65%}
+.vform input[type="file"] {width: 100%; display: inline-block;}
 
 /* conjoined inputs */
 .vform span.pre, .hform span.pre, .vform span.post, .hform span.post {
@@ -249,11 +251,15 @@ table { border-spacing: 0; }
 .vform .c12 fieldset  input[type="number"],
 .vform .c12 fieldset  input[type="time"],
 .vform .c12 fieldset  input[type="email"],
+.vform .c12 fieldset  input[type="password"],
+.vform .c12 fieldset  input[type="file"],
 .vform .c12 fieldset  select,
 .hform .c12 fieldset  input[type="text"],
 .hform .c12 fieldset  input[type="number"],
 .hform .c12 fieldset  input[type="time"],
 .hform .c12 fieldset  input[type="email"],
+.hform .c12 fieldset  input[type="password"],
+.hform .c12 fieldset  input[type="file"],
 .hform .c12 fieldset  select
 {
 	font-size: 12px;
