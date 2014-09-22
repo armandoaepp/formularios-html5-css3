@@ -7,12 +7,10 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 blockquote, q { quotes: none; }
 blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; }
 table { border-spacing: 0; }
-
 /* ---- Clearfixes ---- */
 .row:before,.row:after,.clearfix:before,.clearfix:after{content:'';display:table}
 .row:after,.clearfix:after{clear:both}
 .row,.clearfix{zoom:1}
-
 /* ---- GRID Layout ---- */
 *{box-sizing:border-box; -ms-box-sizing:border-box; -moz-box-sizing:border-box; -webkit-box-sizing:border-box;}
 /*body{margin:0 auto; color:#666666;}*/
@@ -42,7 +40,6 @@ table { border-spacing: 0; }
 .c1.last,.c2.last,.c3.last,.c4.last,.c5.last,.c6.last,.c7.last,.c8.last,.c9.last,.c10.last,.c11.last,.c1-5.last,.c1-8.last {
 	padding-right: 0; position:relative;
 }
-
 /* ---- Alignments ---- */
 .hide{ display: none;}
 .show{display: block;}
@@ -104,10 +101,8 @@ table { border-spacing: 0; }
 .padding-min-right {padding-right: 5px;}
 .padding-min-h {padding: 5px 0;}
 .padding-min-v {padding: 0 5px;}
-
 /* ---- resetear alinear los elementos (Resetear la linea nueva ) ---- */
 .clear{clear: both;}
-
 /* ---- Forms ---- */
 .vform {width: 100%; }
 .hform {width: 100%; }
@@ -199,7 +194,6 @@ table { border-spacing: 0; }
 .hform.control-sm span.post {
 	height: 25px;
 }
-
 .vform span.pre, .hform span.pre{margin-right: -1px; float: left;	}
 .vform span.post, .hform span.post{margin-left: -1px; float: left;}
 .vform input.post, .hform input.post, .vform span.pre, .hform span.pre{
@@ -335,6 +329,7 @@ label.checkbox,
 	margin-bottom: 0;
 	padding-left: 15px;
 	vertical-align: middle;
+	margin-top: 0px ;
 
 }
 
@@ -662,8 +657,6 @@ fieldset[disabled] .checkbox-inline {
 .table tr th a {color: #006600; text-decoration: underline; line-height: inherit; }
 .table tr th a:hover {color: #7C6868; }
 .table tr th a:focus {color: #7C6868; outline: none; }
-
-
 .table-border ,.table-border td  ,.table-border tr td{
    border: 0;
    border: none;
@@ -684,10 +677,8 @@ fieldset[disabled] .checkbox-inline {
 	font-size: 17px;
 	color:  #3C3737 ;
 }
-
 .cursor-pointer{ cursor: pointer;}
 .cursor-default{cursor:default;}
-
 
 /* ---- Pagination ---- */
 .pagin ul {list-style: none; margin: 0; padding: 0; font-weight: bold;}
@@ -826,7 +817,6 @@ fieldset[disabled] .checkbox-inline {
 	-webkit-transition: border linear 0.4s, box-shadow linear 0.4s;
 	width: 100%!important ;
 	margin: 0 1px !important;
-
 }
 
 /* BOTONERA Y BOTONES */
@@ -837,7 +827,6 @@ fieldset[disabled] .checkbox-inline {
     font-size: .95em ;
     width: 100% ;
   }
-
   ul.nav-btn {
     list-style: none;
     margin: 0;
@@ -908,7 +897,6 @@ fieldset[disabled] .checkbox-inline {
 
   .nav-btn span.pre , .boton .pre{margin-right: -1px; float: left!important; }
   .nav-btn span.post, .boton .post{margin-left: -1px; float: right!important;}
-
   .nav-btn .pre ,
   .nav-btn .post,
   .boton .pre,
@@ -970,7 +958,6 @@ fieldset[disabled] .checkbox-inline {
 	font-weight: normal;
 	font-style: normal;
 }
-
 [class^="icon-"],
 [class*=" icon-"] {
 	font-family: 'icomoon';
@@ -1118,7 +1105,6 @@ fieldset[disabled] .checkbox-inline {
 
 /* Smartphones (portrait and landscape) ----------- */
 @media handheld, only screen and (max-width: 480px), only screen and (max-device-width: 480px){
-
 	  ul.nav-btn li a,
 	   .boton {
 
@@ -1152,14 +1138,12 @@ fieldset[disabled] .checkbox-inline {
 		padding-top: 4px ;
 		color: #F6F7F5 ;
 	}
-
 }
 
 .add-background-tr
 {
 	background-color: #EBEBEB ;
 }
-
 /*Datepicker*/
 #ui-datepicker-div {
 font-size: 72.5%;
