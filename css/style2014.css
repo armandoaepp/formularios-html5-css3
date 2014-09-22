@@ -271,11 +271,15 @@ table { border-spacing: 0; }
 .vform.control-sm .c12 fieldset  input[type="number"],
 .vform.control-sm .c12 fieldset  input[type="time"],
 .vform.control-sm .c12 fieldset  input[type="email"],
+.vform.control-sm .c12 fieldset  input[type="password"],
+.vform.control-sm .c12 fieldset  input[type="file"],
 .vform.control-sm .c12 fieldset  select,
 .hform.control-sm .c12 fieldset  input[type="text"],
 .hform.control-sm .c12 fieldset  input[type="number"],
 .hform.control-sm .c12 fieldset  input[type="time"],
 .hform.control-sm .c12 fieldset  input[type="email"],
+.hform.control-sm .c12 fieldset  input[type="password"],
+.hform.control-sm .c12 fieldset  input[type="file"],
 .hform.control-sm .c12 fieldset  select
 {
 	font-size: 11px;
